@@ -1,0 +1,238 @@
+\documentclass[11pt,letterpaper,boxed]{hmcpset}
+
+% include this package to customize page layout of document (e.g. to adjust margins)
+\usepackage[margin=0.9in]{geometry}
+\usepackage{ulem}
+
+% include this to import graphics files with command \includegraphics
+\usepackage{graphicx, url}
+
+\usepackage{mathtools}
+\usepackage{esvect}
+\usepackage{mathrsfs}
+
+% set numbering style for enumerated lists to be of form (a), (b), (c), etc.
+\renewcommand{\labelenumi}{{\bf (\alph{enumi})}}
+
+\newcommand{\ZZ}{\mathbb{Z}}
+%\newcomand{\iff}{\Longleftrightarrow}
+\newcommand{\ord}{\mbox{ord}}
+\renewcommand{\mod}[3]{#1 \equiv #2 \ (\mbox{mod } #3)}
+\addtolength{\fboxsep}{3px}
+\renewcommand{\gcd}{\mbox{gcd}}
+\newcommand{\ul}[1]{\underline{#1}}
+
+
+% info for header block in upper right hand corner
+\name{Name:\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!\_\!}					%% insert your name
+\class{Math 40, Section: \_\!\_\!\_\!\_\!} 
+\assignment{Homework \#2}
+
+\begin{document}
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#15] 
+Find d$(\textbf{u},\textbf{v})$ where $\textbf{u} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}$ and $\textbf{v} = \begin{bmatrix} 2 \\ 3 \\ 1 \end{bmatrix}$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#26] 
+Find the angle between $\textbf{u}$ and $\textbf{v}$ where $\textbf{u} = [4, 3, -1]$ and $\textbf{v} = [1, -1, 1]$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#46] 
+There are to ways of computing the area of a triangle with vectors:
+
+\begin{enumerate}
+\item A = $\frac{1}{2} \| \textbf{u}\| \|\textbf{v}-\text{proj}_\textbf{u} (\textbf{v})\|$
+\item A = $\frac{1}{2} \| \textbf{u}\| \|\textbf{v}\| \sin{\theta}$, and $\sin{\theta} = \sqrt{1 - \cos^2{\theta}}$
+\end{enumerate}
+
+Compute the area of the triangle with the given vertices using both methods:
+\[
+A = (1, - 1), B = (2, 2), C = (4, 0)
+\]
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#60]
+Suppose we know that $\textbf{u} \cdot \textbf{v}= \textbf{u} \cdot \textbf{w}$ Does is follow that $\textbf{v}= \textbf{w}$? If it does, give a proof that is valid in $\mathbb{R}^n$; otherwise, give a counter example (i.e., a specific set of vectors \textbf{u}, \textbf{v}, and \textbf{w} for which $\textbf{u} \cdot \textbf{v}= \textbf{u} \cdot \textbf{w}$ but $\textbf{v} \neq \textbf{w}$).
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#62] 
+\begin{enumerate}
+\item Prove that $ \| \textbf{u} + \textbf{v}\|^2 + \| \textbf{u} - \textbf{v}\|^2 = 2\| \textbf{u}\|^2 + 2\| \textbf{v}\|^2 $ for all vectors \textbf{u} and \textbf{v} in $\mathbb{R}^n$.
+\item Draw a diagram showing \textbf{u}, \textbf{v}, $\textbf{u} + \textbf{v}$, and $\textbf{u} - \textbf{v}$ in $\mathbb{R}^2$ and use (a) to deduce a result about parallelograms.
+\end{enumerate}
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#68b] 
+Prove that if \textbf{u} is orthogonal to both \textbf{v} and \textbf{w}, then \textbf{u} is orthogonal to $s\textbf{v} + t\textbf{w}$ for all scalars $s$ and $t$.
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#6] 
+Write the equation of the line passing through P $=(3,0,-2)$ with direction vector $\textbf{d}=\begin{bmatrix} 2 \\ 5 \\ 0 \end{bmatrix}$ in (a) vector form and (b) parametric form.
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#10] 
+Write the equation of the plane passing through P $=(6,-4,-3)$ with direction vectors $\textbf{u}=\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}$ and $\textbf{v}=\begin{bmatrix} -1 \\ 1 \\ 1 \end{bmatrix}$ in (a) vector form and (b) parametric form.
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#16ace] 
+Consider the vector equation $\textbf{x} = \textbf{p} + t(\textbf{q} - \textbf{p})$, where \textbf{p} and \textbf{q} correspond to distinct points P and Q in $\mathbb{R}^2$ or $\mathbb{R}^3$.\\
+(a) Show that this equation describes the line segment $\overline{PQ}$ as $t$ varies from 0 to 1.\\
+(c) Find the midpoint of $\overline{PQ}$ when P $= (2,-3)$ and Q $=(0,1)$.\\
+(e)Find the two points that divide $\overline{PQ}$ in part (c) into three equal parts.
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#18] 
+The line $\ell$ passes through the point P $= (1,-1,1)$ and has direction vector $\textbf{d}=\begin{bmatrix} 2 \\ 3 \\ -1 \end{bmatrix}$. For each of the following planes $\mathscr{P}$, determine whether $\ell$ and $\mathscr{P}$ are parallel, perpendicular, or neither:
+\begin{enumerate}
+\item $2x + 3y - z = 1$
+\item $4x - y + 5z = 0$
+\item $x - y - z = 3$
+\item $4x + 6y - 2z = 0$
+\end{enumerate}
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#46] 
+Show that the plane given by $4x-y-z=6$ and the line given by $x=t$, $y=1+2t$, $2+3t$ intersect and the find the acute angle of intersection between them.
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#4] 
+Use the cross product to help find the normal form of the equation of the plane.
+\begin{enumerate}
+\item The plane passing through P $=(1,0,-2)$, parallel to $\textbf{u} = \begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}$ and $\textbf{v} = \begin{bmatrix} 3 \\ -1 \\ 2 \end{bmatrix}$
+\item The plane passing through P$= (0,-1,1)$, Q $= (2,0,2)$, and R $= (1,2,-1)$
+\end{enumerate}
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#34] 
+Solve the linear system:\\
+$2x_1 + 3x_2 - x_3 = 1\\
+x_1 + x_3 = 0\\
+-x_1+2x_2-2x_3=0$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\begin{problem}[\#42] 
+Find substitutions (changes of variables) that convert each system into a linear system and use this linear system to help solve the given system:\\
+\[
+x^2 + 2y^2 = 6
+\]
+\[
+x^2 - y^2 = 3
+\]
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+%-----------------------------------------------------------------------------------------------------------------------%
+
+\end{document}
