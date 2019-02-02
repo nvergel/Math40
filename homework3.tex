@@ -1,0 +1,326 @@
+\documentclass[11pt,letterpaper,boxed]{hmcpset}
+
+% include this package to customize page layout of document (e.g. to adjust margins)
+\usepackage[margin=0.9in]{geometry}
+\usepackage{ulem}
+
+% set numbering style for enumerated lists to be of form (a), (b), (c), etc.
+\renewcommand{\labelenumi}{{\bf (\alph{enumi})}}
+
+%for drawing graphs
+\usepackage{tikz}
+\usepackage{amsmath}
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+%% Extra packages
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{esvect}
+\usepackage{mathrsfs}
+%%
+
+% info for header block in upper right hand corner
+\name{Name: \underline{\hspace{3cm}}}
+\class{Math 40, Section: \underline{\hspace{1cm}}}
+\assignment{Homework \#3 Mailbox \#  \underline{\hspace{1cm}}}
+\duedate{February 8, 2019}
+
+
+\begin{document}
+
+\problemlist{Linear Systems, Span, Linear Independence, Matrix Operations \\ 2.2: 14 , 18, 20, 22, 23*, 30 42}
+
+\begin{problem}[2.2.14]
+Use elementary row operations to reduce the given matrix to (a) row echelon form and (b) reduced row echlon form
+$$[M]=\begin{bmatrix}
+-2 & -4 & 7 \\ -3 & -6 & 10 \\ 1 & 2 & -3
+\end{bmatrix} 
+$$
+\end{problem}
+
+%%\begin{solution}
+
+%%\end{solution}
+
+\pagebreak
+
+\begin{problem}[2.2.18]
+\textit{Show that the given matricies are row equivalent and find a sequence of elementary row operations that will convert A into B }
+$$ 
+A = \begin{bmatrix}
+	2&0&-1\\
+	1&1&0\\
+	-1&1&1
+\end{bmatrix}
+\indent \indent  
+B=\begin{bmatrix}
+	3&1&-1\\
+	3&5&1\\
+	2&2&0
+\end{bmatrix}
+$$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[2.2.20]
+\textit{What is the net effect of performing the following sequence of elementary row operations on a matrix ( with at least two rows)? }
+$$ R_2+ R_1, R_1-R_2, R_2+R_1, -R_1 $$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[2.2.22]
+\textit{ Consider the matrix $ A= \begin{bmatrix}
+3&2\\1&4
+\end{bmatrix}$ Show that any of the three types of eleemntary row operations can be used to create a leading 1 at the top of the first column. Which do you prefer and why? }
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[2.2.23]
+\textit{What is the rank of each of the matricies in Exercises 2, 4, 6, and 8}
+$$ 2. \begin{bmatrix}
+7&0&1&0\\0&1&-1&4\\0&0&0&0
+\end{bmatrix}
+\quad
+4.\begin{bmatrix}
+	0&0&0\\
+	0&0&0\\
+	0&0&0
+\end{bmatrix}
+$$
+$$ 6.\begin{bmatrix}
+	0&0&1\\
+	0&1&0\\
+	1&0&0
+\end{bmatrix}
+\quad
+8.  \begin{bmatrix}
+2&1&3&5\\0&0&1&-1\\0&0&0&3\\0&0&0&0
+\end{bmatrix}
+$$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[2.2.30]
+\textit{Use either Gaussian or Gauss-Jordan elimination to solve the system} 
+$$ -x_1+3x_2-2x_3+4x_4 = \phantom-0$$
+$$2x_1-6x_2+ \phantom-x_3-2x_4 = -3$$
+$$ \phantom-x_1+3x_2+4x_3-8x_4 = \phantom-2$$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[2.2.42]
+\textit{Determine what values of k have, for the following system, (a) no solution, (b) a unique solution, and (c) infinitely many solutions}
+$$ \phantom2 x - 2y+3z=2$$
+$$ \phantom2 x +\phantom 2 y+\phantom3z = k$$
+$$ 2x - \phantom2 y +4z= k^2$$ 
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+\problemlist{2.3: 8 , 16, 28, 42}
+
+\begin{problem}[2.3.8]
+\textit{Determine if the vector \textbf{b} is in the span of the columns of the matrix A;}
+$$ A = \begin{bmatrix}
+1&2&3\\5&6&7\\9&10&11
+\end{bmatrix}
+\phantom{asdas}
+\textbf{b}= \begin{bmatrix}
+4\\8\\12
+\end{bmatrix}
+$$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[2.3.16]
+\textit{Describe the span of the given vectors (a) geometrically  and (b) algebraically}
+$$ \begin{bmatrix}
+1\\0\\-1
+\end{bmatrix} \phantom{	},
+\begin{bmatrix}
+-1\\1\\0
+\end{bmatrix} \phantom{	},
+\begin{bmatrix}
+0\\-1\\1
+\end{bmatrix} \phantom{	}
+$$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[2.3.28]
+\textit{Using the method of Example 2.23 and Theorem 2.6 to determine if the set of vectors is linearly independent. If this can be determined by inspection state why. If they are linearly dependent state the dependence relationship among the vectors}
+$$\begin{bmatrix}
+-1\\1\\2\\1
+\end{bmatrix} \phantom{	},
+\begin{bmatrix}
+3\\2\\2\\4
+\end{bmatrix} \phantom{	},
+\begin{bmatrix}
+2\\3\\1\\-1
+\end{bmatrix} \phantom{	}
+$$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[2.3.42]
+\begin{enumerate}
+\item[•]
+A.\textit{If the columns of an $n\times n$ matrix $A$ are linearly indepednt as vectors in $\mathbb{R}^n$\\ \indent \phantom{phantom} what is the rank of $A$?}
+\item[•]
+\indent B.\textit{If the rows of an $n\times n$ matrix $A$ are linearly indepednt as vectors in $\mathbb{R}^n$\\ \indent \phantom{phantom} what is the rank of $A$?}
+\end{enumerate}
+\end{problem}
+
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+\problemlist{Chapter 2 Review: 1fhj}
+\begin{center}
+Determine if the following statements are true or false. 
+\end{center}
+\begin{problem}[Ch 2.1f]
+\textit{In $\mathbb{R}^3$ span(\textbf{u, v}) is always a plane through the origin} 
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+\phantom{\begin{problem}[2.3.28]
+\textit{Using the method of Example 2.23 and Theorem 2.6 to determine if the set of vectors is linearly independent. If this can be determined by inspection state why. If they are linearly dependent state the dependence relationship among the vectors}
+$$\begin{bmatrix}
+-1\\1\\2\\1
+\end{bmatrix} \phantom{	},
+\begin{bmatrix}
+3\\2\\2\\4
+\end{bmatrix} \phantom{	},
+\begin{bmatrix}
+2\\3\\1\\-1
+\end{bmatrix} \phantom{	}
+$$
+\end{problem}}
+
+\begin{problem}[Ch 2.1h]
+\textit{In $\mathbb{R}^3$, if a set of vectors can be drawn head to tail, one after the other so that a closed path (polygon) is formed then the vectors are linearly dependent}
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+\problemlist{3.1: 8, 16, 18}
+\phantom{\begin{problem}[2.3.28]
+\textit{Using the method of Example 2.23 and Theorem 2.6 to determine if the set of vectors is linearly independent. If this can be determined by inspection state why. If they are linearly dependent state the dependence relationship among the vectors}
+$$\begin{bmatrix}
+-1\\1\\2\\1
+\end{bmatrix} \phantom{	},
+\begin{bmatrix}
+3\\2\\2\\4
+\end{bmatrix} \phantom{	},
+\begin{bmatrix}
+2\\3\\1\\-1
+\end{bmatrix} \phantom{	}
+$$
+\end{problem}}
+
+
+\begin{problem}[Ch 2.1j]
+\textit{If there are more vectors in a set of vectors than the number of entries in each vector, then the set of vectors are linearly dependent}
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\problemlist{3.1 Numbers: 8, 16, 18}
+\begin{problem}[3.1.8]
+\textit{ Compute the indicated matrix opperation; $BB^T$}
+$$B=\begin{bmatrix}
+4&-2&1\\0&\phantom-2&3
+\end{bmatrix}
+$$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[3.1.16]
+\textit{ Compute the indicated matrix opperation; $(I_2-D)^2$}
+$$D=\begin{bmatrix}
+\phantom-0&-3\\-2&\phantom-1
+\end{bmatrix}$$
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+\pagebreak
+
+\begin{problem}[3.1.18]
+\textit{Let $A=\begin{bmatrix}
+2&1\\6&3
+\end{bmatrix}$. Find $2\times 2$ matrices $B$ and $C$ such that $AB= AC$ but $B \neq C$}
+\end{problem}
+
+%\begin{solution}
+
+%\end{solution}
+
+
+\end{document}
